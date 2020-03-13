@@ -1,0 +1,100 @@
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Ajouter des attributs à des elements HTML</title>
+</head>
+
+<body>
+    <style>
+        #container {
+            height: 700px;
+            padding: 25px;
+            background-color: #b3475c;
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            grid-template-rows: 50px 100px auto auto 100px;
+            grid-gap: 10px;
+            grid-template-areas:
+                "enTete enTete enTete enTete enTete enTete"
+                "navigation navigation navigation navigation navigation navigation"
+                "main main main main section section"
+                "main main main main section section"
+                "pied pied pied pied pied pied";
+            margin: 45px;
+            box-shadow: -1px 1px 10px 10px;
+        }
+
+        .items {
+            background-color: #decb6b;
+            font-size: 2em;
+            color: #b3475c;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .mot-cle {
+            text-transform: uppercase;
+        }
+
+        header {
+            grid-area: enTete;
+
+        }
+
+        main {
+            grid-area: main;
+        }
+        
+        section {
+            grid-area: section;
+        }
+
+        footer {
+            grid-area: pied;
+        }
+
+        nav {
+            grid-area: navigation;
+        }
+
+        .block-hover {
+            box-shadow: 1px 1px 5px 5px;
+            border: 2px solid #e9c46b;
+            color: #e55956;
+        }
+    </style>
+    <!-- Utiliser javascript pour que faire en sorte que le l'element div ci-dessous ait un ID de "container" pour que le style CSS appliqué à cet id dans le code CSS puisse s'y appliquer   -->
+    <div>
+
+        <!--   Utiliser javascript pour ajouter des classes "items" à tous les elements enfants direct de l'element div ci-dessus     -->
+        <header>Je suis le header</header>
+        <nav>Je suis le menu de navigation</nav>
+        <main>Je suis le pricipal</main>
+
+        <!--   Faites en sorte que le text section subisse tout le css appliqué à classe section     -->
+        <section>Je suis une <span>section</span></section>
+        <footer>Je suis le pied de la page</footer>
+    </div>
+
+    <!--  
+        Faites en sorte qu'à tous les elements enfants direct de l'element de ID "container" que la classe ".block-hover" s'y applique quand l'utilisateur pose le curseur dessus puis que cette même classe se detache de l'element quand la souris cesse de survoler l'element
+  
+        Faites en sorte que lorsque l'onclique sur un element, que son contenu s'affiche dans un alert
+
+        Attribut et methodes à prendre en compte
+
+        AVec Javascript faites que qu'au survol d'un element que le curseur devienne un pointeur : ICI appliquer le style avec Javascript
+
+        ->mouseover
+        ->mouseout
+        ->click
+        ->setAttribute
+        ->getAttribute
+        ->classList
+ -->
+    <script src="script.js">
+    </script>
+</body>
+
+</html>

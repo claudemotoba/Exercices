@@ -1,0 +1,3 @@
+- Timers:
+    - setTimeout(callback,time): run onces
+    - setInterval(callback,time): repetitions

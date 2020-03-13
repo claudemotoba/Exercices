@@ -1,0 +1,3 @@
+onclick: -
+  ->Fill the table by iterating over the objects array some data
+  ->Fill the table with users

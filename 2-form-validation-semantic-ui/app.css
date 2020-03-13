@@ -1,0 +1,16 @@
+.parent {
+    border: 1px solid #cacbcd;
+    border-radius: .28571429rem;
+    width: 45%;
+    margin: auto;
+    padding: 50px;
+    text-align: center;
+    -webkit-border-radius: .28571429rem;
+    -moz-border-radius: .28571429rem;
+    -ms-border-radius: .28571429rem;
+    -o-border-radius: .28571429rem;
+}
+
+label {
+    text-align: start;
+}

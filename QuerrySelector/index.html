@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #html5 {
+            border: 1px solid teal;
+            color: darkorange
+        }
+
+        .techs {
+            color: olive;
+            font-style: 1.2em;
+        }
+
+        .some-style {
+            color: green;
+            font-size: 2em;
+        }
+
+        #rangeValue {
+            font-weight: bold;
+            font-family: 'Operator Mono';
+            margin-left: 40px;
+            color: orangered;
+        }
+    </style>
+</head>
+<!-- 
+1 - acceder au h1
+2 - Change le texte du h1
+
+ -->
+
+<body>
+    <h1 id="grosTitre">Bienvenu dans KDA</h1>
+    <p id="presentation">Ici à Kinshasa Digital Academy,les formations sont très intensive car nous formaons des
+        commandos dans le
+        code.Des <span style="display:none">programmeurs</span> capables de relever n'importe quel défi d'où que celà
+        puisse venir.On les apprend à dompter
+        le Javascript au delà de tout ce qui est librarie ou Framwork spécifique</p>
+    <p>Les apprenant de la <a href="https://academy.kinshasadigital.com">Kinshasa Digital academy</a> sont les meilleurs
+        de toutes la RDCongo,aucune université,aucun
+        centre de formation professionnel ne forme des profils aussi compétents et technique que la Kinshasa Digital
+        Academy</p>
+    <form action="">
+        <input placeholder="email" type="text" name="" id="email"><br>
+        <input placeholder="Mot de passe" type="password" name="" id="pwd"><br>
+        <input type="checkbox" name="" id="check"><br>
+        <input type="range" name="" id="" min="100" max="300"><span id="rangeValue"></span><br>
+
+        <input type="submit" value="Soumettre">
+    </form>
+    <h2>Langages utilisés</h2>
+    <ol>
+        <li id="html5" class="languages">HTML 5</li>
+        <li id="css3" class="languages">CSS 3</li>
+        <li id="Javascript" class="languages">Javascript</li>
+
+    </ol>
+    <img src="./kda_logo.png" width="600px" alt="" id="img">
+    <ul id="techs">
+        <li id="react-js" class="techs">React JS/Redux <button>X</button></li>
+        <li id="react-native" class="techs">React Native <button>X</button></li>
+        <li id="nodejs" class="techs">Node.js/Express <button>X</button></li>
+    </ul>
+    <script src="script.js">
+        console.log("Je suis dans une joie immence")
+    </script>
+</body>
+
+</html>
