@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html><head>
+     <style type="text/css">
+          a {  display: inline-block;
+               width: 200px; height:60px;
+               line-height: 60px;
+               background-color:linen;
+               text-align: center;
+               font-size:24px;
+               text-decoration: none;
+               color:blue;
+               }
+          iframe { display: block;
+               width: 600px; height:500px;
+               Margin-top: 20px;
+               }
+      </style>
+</head><body>
+     <div id="menu" onclick="toto(event)">
+          <a href="http://www.openclassrooms.com" target="myFrame">openClassrooms</a>
+          <a href="http://www.w3schools.com" target="myFrame">w3c schools</a>
+          <a href="http://www.reverso.net" target="myFrame">reverso</a>
+     </div>
+     <iframe id="myFrame" name="myFrame"></iframe>
+     <script type="text/javascript">
+          function toto(e) {
+          activedLink = e.target.href;
+          array = menu.getElementsByTagName("a");
+          console.log(menu);
+          console.log(array);
+          for (i=0; i<array.length; i++) {
+               if ( array[i].href != activedLink )
+                    array[i].style.color = "blue";
+               else array[i].style.color = "tomato";
+               }
+          myFrame.src = activedLink;
+          }
+     </script>
+</body></html>
