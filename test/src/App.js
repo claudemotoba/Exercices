@@ -2,6 +2,9 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import Home from './pages/Home'
+import Sketeton from './pages/Sketeton'
+import Profils from './components/Profils/Profils'
+import Profil from './components/Profils/Profil'
 
 function App() {
   return (
@@ -9,12 +12,12 @@ function App() {
       <div className="App">
         <Switch>
           <Route exact path="/">
-            <Home/>
+            <Profils/>
           </Route>
-          <Route exact path="/">
-          
+          <Route path="/profil">
+            <Profil/>
           </Route>
-          <Route exact path="/">
+          <Route path="/">
             
           </Route>
           <Route path="/">
